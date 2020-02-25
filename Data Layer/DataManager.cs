@@ -8,6 +8,13 @@ namespace Data_Layer
 {
     public class DataManager
     {
+        public List<Products> GetProducts()
+        {
+            using (var db = new Northwind())
+            {
+                return db.Products.ToList();
+            }
+        }
 
     }
 }
