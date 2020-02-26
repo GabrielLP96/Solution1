@@ -13,4 +13,4 @@ namespace BusinessEntities
         public string Details { get; set; } //ev. begränsa till 500 tecken 
     }
 }
-}
+

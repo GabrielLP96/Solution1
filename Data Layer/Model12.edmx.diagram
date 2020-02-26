@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="a38eac815ca24c32b02778be818ae567" Name="Diagram1" ZoomLevel="85">
+        <EntityTypeShape EntityType="osu2022Model.sysdiagrams" Width="1.5" PointX="15" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="osu2022Model.Employee" Width="1.5" PointX="4.25" PointY="3.625" />
+        <EntityTypeShape EntityType="osu2022Model.User" Width="1.5" PointX="7.125" PointY="0.5" />
+        <InheritanceConnector EntityType="osu2022Model.Employee" />
+        <EntityTypeShape EntityType="osu2022Model.Alumnus" Width="1.5" PointX="9.625" PointY="3.625" />
+        <InheritanceConnector EntityType="osu2022Model.Alumnus" />
+        <EntityTypeShape EntityType="osu2022Model.Program" Width="1.5" PointX="9.625" PointY="6.625" />
+        <AssociationConnector Association="osu2022Model.AlumnusProgram" />
+        <EntityTypeShape EntityType="osu2022Model.Section" Width="1.5" PointX="4.25" PointY="6.625" />
+        <AssociationConnector Association="osu2022Model.ProgramSection" />
+        <AssociationConnector Association="osu2022Model.SectionEmployee" />
+        <InheritanceConnector EntityType="osu2022Model.Alumnus" />
+        <EntityTypeShape EntityType="osu2022Model.Event" Width="1.5" PointX="14.875" PointY="5.125" />
+        <AssociationConnector Association="osu2022Model.EmployeeEvent" ManuallyRouted="true" >
+          <ConnectorPoint PointX="5.75" PointY="5.0820785801830617" />
+          <ConnectorPoint PointX="8.8649513169143344" PointY="5.0820785801830617" />
+          <ConnectorPoint PointX="8.8649513169143344" PointY="5.7812759947537522" />
+          <ConnectorPoint PointX="10.291666666666666" PointY="5.7812759947537513" />
+          <ConnectorPoint PointX="10.458333333333334" PointY="5.7812759947537522" />
+          <ConnectorPoint PointX="14.875" PointY="5.7812759947537522" />
+        </AssociationConnector>
+        <AssociationConnector Association="osu2022Model.EventAlumnus" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
