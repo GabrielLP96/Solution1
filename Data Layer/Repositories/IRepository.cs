@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace Data_Layer.Repositories
 {
-    class Repository
+    public interface IRepository<TEntity> where TEntity : class
     {
-
+        TEntity Get(int id);
+        
     }
 }
