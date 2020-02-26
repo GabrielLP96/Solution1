@@ -46,14 +46,35 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="Log in Admin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Log in Admin.Designer.cs">
+      <DependentUpon>Log in Admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Log in alternatives.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Log in alternatives.Designer.cs">
+      <DependentUpon>Log in alternatives.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Log in Alumni.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Log in Alumni.Designer.cs">
+      <DependentUpon>Log in Alumni.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Log in Admin.resx">
+      <DependentUpon>Log in Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Log in alternatives.resx">
+      <DependentUpon>Log in alternatives.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Log in Alumni.resx">
+      <DependentUpon>Log in Alumni.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
