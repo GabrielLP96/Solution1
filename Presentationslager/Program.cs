@@ -16,7 +16,7 @@ namespace Presentationslager
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new LoggInForm());
+            Application.Run(new StartupForm());
         }
     }
 }

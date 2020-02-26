@@ -33,6 +33,8 @@
             this.txt_password = new System.Windows.Forms.Label();
             this.txt_AlumniID = new System.Windows.Forms.Label();
             this.btn_LogInAdmin = new System.Windows.Forms.Button();
+            this.Btn_previous = new System.Windows.Forms.Button();
+            this.Btn_exit = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // textBoxLogInAlumniPassword
@@ -80,11 +82,33 @@
             this.btn_LogInAdmin.Text = "Log in";
             this.btn_LogInAdmin.UseVisualStyleBackColor = true;
             // 
+            // Btn_previous
+            // 
+            this.Btn_previous.Location = new System.Drawing.Point(713, 415);
+            this.Btn_previous.Name = "Btn_previous";
+            this.Btn_previous.Size = new System.Drawing.Size(75, 23);
+            this.Btn_previous.TabIndex = 23;
+            this.Btn_previous.Text = "Previous";
+            this.Btn_previous.UseVisualStyleBackColor = true;
+            this.Btn_previous.Click += new System.EventHandler(this.Btn_previous_Click);
+            // 
+            // Btn_exit
+            // 
+            this.Btn_exit.Location = new System.Drawing.Point(12, 415);
+            this.Btn_exit.Name = "Btn_exit";
+            this.Btn_exit.Size = new System.Drawing.Size(75, 23);
+            this.Btn_exit.TabIndex = 24;
+            this.Btn_exit.Text = "Exit";
+            this.Btn_exit.UseVisualStyleBackColor = true;
+            this.Btn_exit.Click += new System.EventHandler(this.Btn_exit_Click);
+            // 
             // Log_in_Alumni
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.Btn_exit);
+            this.Controls.Add(this.Btn_previous);
             this.Controls.Add(this.textBoxLogInAlumniPassword);
             this.Controls.Add(this.textBoxLoginaAlumni);
             this.Controls.Add(this.txt_password);
@@ -105,5 +129,7 @@
         private System.Windows.Forms.Label txt_password;
         private System.Windows.Forms.Label txt_AlumniID;
         private System.Windows.Forms.Button btn_LogInAdmin;
+        private System.Windows.Forms.Button Btn_previous;
+        private System.Windows.Forms.Button Btn_exit;
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace Presentationslager
 {
-    partial class LoggInForm
+    partial class StartupForm
     {
         /// <summary>
         /// Required designer variable.
@@ -149,8 +149,9 @@
             this.Btn_createnewAlumni.TabIndex = 11;
             this.Btn_createnewAlumni.Text = "Create new";
             this.Btn_createnewAlumni.UseVisualStyleBackColor = true;
+            this.Btn_createnewAlumni.Click += new System.EventHandler(this.Btn_createnewAlumni_Click);
             // 
-            // LoggInForm
+            // StartupForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -166,7 +167,7 @@
             this.Controls.Add(this.Txt_loggainadmin);
             this.Controls.Add(this.Btn_admin);
             this.Controls.Add(this.Btn_alumni);
-            this.Name = "LoggInForm";
+            this.Name = "StartupForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Choose Log in";
             this.ResumeLayout(false);

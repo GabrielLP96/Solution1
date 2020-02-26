@@ -16,5 +16,15 @@ namespace Presentationslager
         {
             InitializeComponent();
         }
+
+        private void Btn_previous_Click(object sender, EventArgs e)
+        {
+            DialogResult = DialogResult.OK;
+        }
+
+        private void Btn_exit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

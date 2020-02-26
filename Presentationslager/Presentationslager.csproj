@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdminHandleActivities.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminHandleActivities.Designer.cs">
+      <DependentUpon>AdminHandleActivities.cs</DependentUpon>
+    </Compile>
     <Compile Include="AdminMeny.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -64,17 +70,23 @@
     <Compile Include="CreateAdmin.Designer.cs">
       <DependentUpon>CreateAdmin.cs</DependentUpon>
     </Compile>
+    <Compile Include="CreateAlumni.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateAlumni.Designer.cs">
+      <DependentUpon>CreateAlumni.cs</DependentUpon>
+    </Compile>
     <Compile Include="Log in Admin.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Log in Admin.Designer.cs">
       <DependentUpon>Log in Admin.cs</DependentUpon>
     </Compile>
-    <Compile Include="Log in alternatives.cs">
+    <Compile Include="StartUpform.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Log in alternatives.Designer.cs">
-      <DependentUpon>Log in alternatives.cs</DependentUpon>
+    <Compile Include="StartUpform.Designer.cs">
+      <DependentUpon>StartUpform.cs</DependentUpon>
     </Compile>
     <Compile Include="Log in Alumni.cs">
       <SubType>Form</SubType>
@@ -84,6 +96,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AdminHandleActivities.resx">
+      <DependentUpon>AdminHandleActivities.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AdminMeny.resx">
       <DependentUpon>AdminMeny.cs</DependentUpon>
     </EmbeddedResource>
@@ -93,11 +108,14 @@
     <EmbeddedResource Include="CreateAdmin.resx">
       <DependentUpon>CreateAdmin.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="CreateAlumni.resx">
+      <DependentUpon>CreateAlumni.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Log in Admin.resx">
       <DependentUpon>Log in Admin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Log in alternatives.resx">
-      <DependentUpon>Log in alternatives.cs</DependentUpon>
+    <EmbeddedResource Include="StartUpform.resx">
+      <DependentUpon>StartUpform.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Log in Alumni.resx">
       <DependentUpon>Log in Alumni.cs</DependentUpon>

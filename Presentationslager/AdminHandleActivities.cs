@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace Presentationslager
 {
-    public partial class AdminMeny : Form
+    public partial class AdminHandleActivities : Form
     {
-        public AdminMeny()
+        public AdminHandleActivities()
         {
             InitializeComponent();
-        }
-
-        private void btnLogOut_Click(object sender, EventArgs e)
-        {
-            DialogResult = DialogResult.OK;
         }
     }
 }
