@@ -34,7 +34,11 @@
             this.Txt_loggaInAlumni = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.Txt_select = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.Exit_btn = new System.Windows.Forms.Button();
+            this.Btn_createNewAdmin = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.Btn_createnewAlumni = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Btn_alumni
@@ -46,6 +50,7 @@
             this.Btn_alumni.TabIndex = 1;
             this.Btn_alumni.Text = "Log In";
             this.Btn_alumni.UseVisualStyleBackColor = true;
+            this.Btn_alumni.Click += new System.EventHandler(this.Btn_alumni_Click);
             // 
             // Btn_admin
             // 
@@ -56,6 +61,7 @@
             this.Btn_admin.TabIndex = 2;
             this.Btn_admin.Text = "Log in";
             this.Btn_admin.UseVisualStyleBackColor = true;
+            this.Btn_admin.Click += new System.EventHandler(this.Btn_admin_Click);
             // 
             // Txt_loggainadmin
             // 
@@ -97,21 +103,63 @@
             this.Txt_select.TabIndex = 6;
             this.Txt_select.Text = "please select one of the alternatives";
             // 
-            // button1
+            // Exit_btn
             // 
-            this.button1.Location = new System.Drawing.Point(713, 415);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 7;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.Exit_btn.Location = new System.Drawing.Point(713, 415);
+            this.Exit_btn.Name = "Exit_btn";
+            this.Exit_btn.Size = new System.Drawing.Size(75, 23);
+            this.Exit_btn.TabIndex = 7;
+            this.Exit_btn.Text = "Exit";
+            this.Exit_btn.UseVisualStyleBackColor = true;
+            this.Exit_btn.Click += new System.EventHandler(this.Exit_btn_Click);
+            // 
+            // Btn_createNewAdmin
+            // 
+            this.Btn_createNewAdmin.Location = new System.Drawing.Point(140, 402);
+            this.Btn_createNewAdmin.Name = "Btn_createNewAdmin";
+            this.Btn_createNewAdmin.Size = new System.Drawing.Size(91, 36);
+            this.Btn_createNewAdmin.TabIndex = 8;
+            this.Btn_createNewAdmin.Text = "Create new";
+            this.Btn_createNewAdmin.UseVisualStyleBackColor = true;
+            this.Btn_createNewAdmin.Click += new System.EventHandler(this.Btn_createNewAdmin_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(139, 386);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(92, 13);
+            this.label2.TabIndex = 9;
+            this.label2.Text = "Create new admin";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(546, 386);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(95, 13);
+            this.label3.TabIndex = 12;
+            this.label3.Text = "Create new Alumni";
+            // 
+            // Btn_createnewAlumni
+            // 
+            this.Btn_createnewAlumni.Location = new System.Drawing.Point(547, 402);
+            this.Btn_createnewAlumni.Name = "Btn_createnewAlumni";
+            this.Btn_createnewAlumni.Size = new System.Drawing.Size(91, 36);
+            this.Btn_createnewAlumni.TabIndex = 11;
+            this.Btn_createnewAlumni.Text = "Create new";
+            this.Btn_createnewAlumni.UseVisualStyleBackColor = true;
             // 
             // LoggInForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.Btn_createnewAlumni);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.Btn_createNewAdmin);
+            this.Controls.Add(this.Exit_btn);
             this.Controls.Add(this.Txt_select);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.Txt_loggaInAlumni);
@@ -119,7 +167,8 @@
             this.Controls.Add(this.Btn_admin);
             this.Controls.Add(this.Btn_alumni);
             this.Name = "LoggInForm";
-            this.Text = "VäljLoggIn";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Choose Log in";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -133,7 +182,11 @@
         private System.Windows.Forms.Label Txt_loggaInAlumni;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label Txt_select;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button Exit_btn;
+        private System.Windows.Forms.Button Btn_createNewAdmin;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button Btn_createnewAlumni;
     }
 }
 

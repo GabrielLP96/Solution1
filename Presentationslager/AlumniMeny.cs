@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Presentationslager
 {
-    public partial class LogInadmin : Form
+    public partial class AlumniMeny : Form
     {
-        public LogInadmin()
+        public AlumniMeny()
         {
             InitializeComponent();
         }

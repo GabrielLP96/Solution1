@@ -91,7 +91,8 @@
             this.Controls.Add(this.txt_AlumniID);
             this.Controls.Add(this.btn_LogInAdmin);
             this.Name = "Log_in_Alumni";
-            this.Text = "Log_in_Alumni";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Log in Alumni";
             this.ResumeLayout(false);
             this.PerformLayout();
 

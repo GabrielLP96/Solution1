@@ -1,6 +1,6 @@
 ﻿namespace Presentationslager
 {
-    partial class Form1
+    partial class LogInadmin
     {
         /// <summary>
         /// Required designer variable.
@@ -80,7 +80,7 @@
             this.btn_LogInAdmin.Text = "Log in";
             this.btn_LogInAdmin.UseVisualStyleBackColor = true;
             // 
-            // Form1
+            // LogInadmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -90,8 +90,9 @@
             this.Controls.Add(this.txt_password);
             this.Controls.Add(this.txt_adminId);
             this.Controls.Add(this.btn_LogInAdmin);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "LogInadmin";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Log in Admin";
             this.ResumeLayout(false);
             this.PerformLayout();
 

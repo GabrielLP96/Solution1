@@ -46,6 +46,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdminMeny.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminMeny.Designer.cs">
+      <DependentUpon>AdminMeny.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AlumniMeny.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AlumniMeny.Designer.cs">
+      <DependentUpon>AlumniMeny.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreateAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateAdmin.Designer.cs">
+      <DependentUpon>CreateAdmin.cs</DependentUpon>
+    </Compile>
     <Compile Include="Log in Admin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -66,6 +84,15 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AdminMeny.resx">
+      <DependentUpon>AdminMeny.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AlumniMeny.resx">
+      <DependentUpon>AlumniMeny.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateAdmin.resx">
+      <DependentUpon>CreateAdmin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Log in Admin.resx">
       <DependentUpon>Log in Admin.cs</DependentUpon>
     </EmbeddedResource>

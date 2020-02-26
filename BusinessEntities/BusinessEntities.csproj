@@ -46,7 +46,7 @@
     <Compile Include="Alumni.cs" />
     <Compile Include="BusinessInformatics.cs" />
     <Compile Include="ComputorScience.cs" />
-    <Compile Include="Emplyee.cs" />
+    <Compile Include="Employee.cs" />
     <Compile Include="GuestLecture.cs" />
     <Compile Include="Interfaces\IActivity.cs" />
     <Compile Include="Program.cs" />

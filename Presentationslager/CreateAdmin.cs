@@ -10,11 +10,21 @@ using System.Windows.Forms;
 
 namespace Presentationslager
 {
-    public partial class LogInadmin : Form
+    public partial class CreateAdmin : Form
     {
-        public LogInadmin()
+        public CreateAdmin()
         {
             InitializeComponent();
+        }
+
+        private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
