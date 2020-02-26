@@ -4,10 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Data_Layer
+namespace Data_Layer.UnitOfWork
 {
-    public class DataManager
+    class UnitOfWork
     {
-
     }
 }
