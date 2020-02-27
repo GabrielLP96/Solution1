@@ -7,7 +7,7 @@ namespace Data_Layer
     using System.Data.Entity.Spatial;
 
     [Table("Alumnus")]
-    public partial class Alumnus
+    public partial class Alumnus : User
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Alumnus()
