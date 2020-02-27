@@ -74,6 +74,7 @@
     <Compile Include="IRepositories\IUserRepository.cs" />
     <Compile Include="IRepositories\IProgramRepository.cs" />
     <Compile Include="IRepositories\ISectionRepository.cs" />
+    <Compile Include="IRepositories\IAlumnusRepository.cs" />
     <Compile Include="Repositories\ProgramRepository.cs" />
     <Compile Include="Repositories\Repository.cs" />
     <Compile Include="Repositories\SectionRepository.cs" />
