@@ -19,7 +19,7 @@ namespace Data_Layer.UnitOfWork
             _context = context;
             Alumnus = new AlumnusRepository(_context);
             Employee = new EmployeeRepository(_context);
-            Aktivity = new ActivitiesRepository(_context);
+            Activities = new ActivitiesRepository(_context);         
             User = new UserRepository(_context);
             Program = new ProgramRepository(_context);
             Section = new SectionRepository(_context);
@@ -28,6 +28,12 @@ namespace Data_Layer.UnitOfWork
 
         public IAlumnusRepository Alumnus { get; private set; }
         public IEmployeeRepository Employee { get; private set; }
-        public IActivitiesRepository 
+        public IActivitiesRepository Activities { get; private set; }
+        public IUserRepository User { get; private set; }
+        
+        public IProgramRepository Program { get; private set; }
+        public ISectionRepository Section { get; private set; }
+
+
     }
 }

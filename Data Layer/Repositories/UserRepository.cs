@@ -7,7 +7,7 @@ using Data_Layer.IRepositories;
 
 namespace Data_Layer.Repositories
 {
-    class UserRepository : Repository<User>, IUserRepository
+   public class UserRepository : Repository<User>, IUserRepository
     {
         public UserRepository(AlumnusModel context) : base(context)
         {
