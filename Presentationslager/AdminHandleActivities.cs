@@ -16,5 +16,16 @@ namespace Presentationslager
         {
             InitializeComponent();
         }
+
+        private void Btn_previous_Click(object sender, EventArgs e)
+        {
+            DialogResult = DialogResult.OK;
+            
+        }
+
+        private void Btn_edit_Click(object sender, EventArgs e)
+        {
+            AdminEditActivities adminEditActivities = new AdminEditActivities 
+        }
     }
 }

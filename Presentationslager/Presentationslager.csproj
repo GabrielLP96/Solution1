@@ -52,6 +52,12 @@
     <Compile Include="AdminHandleActivities.Designer.cs">
       <DependentUpon>AdminHandleActivities.cs</DependentUpon>
     </Compile>
+    <Compile Include="AdminHandleAlumni.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminHandleAlumni.Designer.cs">
+      <DependentUpon>AdminHandleAlumni.cs</DependentUpon>
+    </Compile>
     <Compile Include="AdminMeny.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -76,6 +82,12 @@
     <Compile Include="CreateAlumni.Designer.cs">
       <DependentUpon>CreateAlumni.cs</DependentUpon>
     </Compile>
+    <Compile Include="AdminEditActivities.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminEditActivities.Designer.cs">
+      <DependentUpon>AdminEditActivities.cs</DependentUpon>
+    </Compile>
     <Compile Include="Log in Admin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -98,6 +110,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="AdminHandleActivities.resx">
       <DependentUpon>AdminHandleActivities.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminHandleAlumni.resx">
+      <DependentUpon>AdminHandleAlumni.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AdminMeny.resx">
       <DependentUpon>AdminMeny.cs</DependentUpon>
