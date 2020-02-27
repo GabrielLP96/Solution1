@@ -13,7 +13,7 @@ namespace Data_Layer.Repositories
         {
         }
 
-        public List<User> GetUser()
+        public List<User> GetUsers()
         {
             using (var db = new AlumnusModel())
             {

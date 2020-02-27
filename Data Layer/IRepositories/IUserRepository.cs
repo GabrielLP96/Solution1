@@ -7,6 +7,6 @@ namespace Data_Layer.Repositories
     {
         AlumnusModel AlumnusModel { get; }
 
-        List<User> GetUser();
+        List<User> GetUsers(string username);
     }
 }

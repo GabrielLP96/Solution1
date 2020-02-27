@@ -61,6 +61,14 @@ namespace Business_Layer
                 return new UserBL(x);
             else return null;
         }
+        public Employee GetEmployee(int PersId)
+        {
+            return unitOfWork.Employee.GetEmployee(PersId);
+        }
+        public Section GetSection(int sectionID)
+        {
+            return unitOfWork.Section.GetSection(sectionID);
+        }
         
         
     }
