@@ -112,6 +112,7 @@
     <Compile Include="AdminEditActivities.Designer.cs">
       <DependentUpon>AdminEditActivities.cs</DependentUpon>
     </Compile>
+    <Compile Include="Globals.cs" />
     <Compile Include="Log in Admin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -195,6 +196,16 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Business Layer\Business Layer.csproj">
+      <Project>{92db4089-0770-48c2-adc5-4ff0e0095404}</Project>
+      <Name>Business Layer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Data Layer\Data Layer.csproj">
+      <Project>{44c0a574-7e55-46f1-a2ac-1066ac2865ce}</Project>
+      <Name>Data Layer</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

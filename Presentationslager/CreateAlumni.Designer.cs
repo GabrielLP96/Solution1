@@ -205,6 +205,7 @@
             this.btn_register.TabIndex = 17;
             this.btn_register.Text = "register";
             this.btn_register.UseVisualStyleBackColor = true;
+            this.btn_register.Click += new System.EventHandler(this.btn_register_Click);
             // 
             // Btn_previous
             // 
