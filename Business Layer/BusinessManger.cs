@@ -12,6 +12,7 @@ using Business_Layer;
 
 
 
+
 namespace Business_Layer
 {
     public class BusinessManger
@@ -55,7 +56,7 @@ namespace Business_Layer
         }
         public UserBL GetUser(string Username, string PassWord)
         {
-            User x = unitOfWork.User.GetUser(Username, PassWord);
+            User x = unitOfWork.User.GetUsers(Username, PassWord);
 
             if (x != null)
                 return new UserBL(x);
@@ -68,6 +69,53 @@ namespace Business_Layer
         public Section GetSection(int sectionID)
         {
             return unitOfWork.Section.GetSection(sectionID);
+        }
+        public Alumnus GetAlumn(int PersID)
+        {
+            return unitOfWork.Alumnus.GetAlumnus(PersID);
+        }
+
+        public List<ActivityBL> GetActivities()
+        {
+            List<ActivityBL> activities = new List<ActivityBL>();
+            foreach (Data_Layer.Aktivity aktivity in unitOfWork.Activities.GetActivities())
+                activities.Add(ActivityBL.Convert(aktivity));
+
+            return activities;
+                           
+        }
+        public List<SektionBl> GetSektions()
+        {
+            List<SektionBl> sektions = new List<SektionBl>();
+            foreach (Data_Layer.Section section in unitOfWork.Section.GetSections())
+                sektions.Add(SektionBl.Convert(section));
+
+            return sektions;
+        }
+
+        public List<AlumnusBL> GetAlumns()
+        {
+            List<AlumnusBL> alumns = new List<AlumnusBL>();
+            foreach (Data_Layer.Alumnus alumnus in unitOfWork.Alumnus.GetAlumns())
+                alumns.Add(AlumnusBL)                 
+        }
+        public List<ProgramBL> GetPrograms()
+        {
+            List<ProgramBL> programs = new List<ProgramBL>();
+            foreach (Data_Layer.Program program in unitOfWork.Program.GetProgram())
+                programs.Add(ProgramBL.Convert(program));
+
+            return programs;
+        }
+
+        public void UpdateActivity (ActivityBL activity, int AktivityId)
+        {
+            unitOfWork.Activities.UpdateActivity(activity, AktivityId);
+        }
+
+        public void DeleteActivity (ActivityBL activity)
+        {
+            unitOfWork.Activities.DeleteActivities(activity);
         }
         
         
