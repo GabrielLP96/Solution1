@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
 
-namespace Data_Layer.Repositories
+namespace Data_Layer.IRepositories
 {
-   public interface ISectionRepository
+   public interface ISectionRepository : IRepository<Section>
     {
         AlumnusModel AlumnusModel { get; }
 

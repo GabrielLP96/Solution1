@@ -1,9 +1,9 @@
 ﻿using System.Collections.Generic;
 
 
-namespace Data_Layer.Repositories
+namespace Data_Layer.IRepositories
 {
-    public interface IActivitiesRepository
+    public interface IActivitiesRepository : IRepository<Aktivity>
     {
         AlumnusModel AlumnusModel { get; }
 

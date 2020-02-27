@@ -80,6 +80,7 @@
     <Compile Include="Repositories\SectionRepository.cs" />
     <Compile Include="Repositories\UserRepository.cs" />
     <Compile Include="Section.cs" />
+    <Compile Include="UnitOfWork\IUnitOfWork.cs" />
     <Compile Include="UnitOfWork\UnitOfWork.cs" />
     <Compile Include="User.cs" />
   </ItemGroup>

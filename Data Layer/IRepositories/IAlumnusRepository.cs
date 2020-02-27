@@ -1,8 +1,12 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace Data_Layer.Repositories
+namespace Data_Layer.IRepositories
 {
-    public interface IAlumnusRepository
+    public interface IAlumnusRepository : IRepository<Alumnus>
     {
         AlumnusModel AlumnusModel { get; }
 
