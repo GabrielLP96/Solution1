@@ -5,54 +5,42 @@ using System.Text;
 using System.Threading.Tasks;
 using Data_Layer.IRepositories;
 
-
 namespace Data_Layer.Repositories
 {
-    public class ActivitiesRepository : Repository<Aktivity>, IActivitiesRepository
+    class SectionRepository : Repository<Section>, ISectionRepository
     {
-        public ActivitiesRepository(AlumnusModel context) : base(context)
+        public SectionRepository(AlumnusModel context) : base(context)
         {
         }
 
-        public void CreateActivity(Aktivity aktivity)
+        public void CreateSection(Section section)
         {
             using (var db = new AlumnusModel())
             {
-                db.Aktivity.Add(aktivity);
+                db.Section.Add(section);
                 db.SaveChanges();
             }
         }
 
-        public List<Aktivity> GetActivities()
+        public Section GetSection(int sectionId)
         {
             using (var db = new AlumnusModel())
             {
-                return db.Aktivity.ToList();
+                return db.Section.OfType<Section>().Where(x => x.SectionId == sectionId).FirstOrDefault();
             }
         }
-        public List<Aktivity> GetActivitiesByAlumnus()
+
+        public List<Section> GetSections()
         {
             using (var db = new AlumnusModel())
             {
-                return db.Aktivity.Where(x => x.Alumnus != null).ToList();
+                return db.Section.ToList();
             }
-        }
-
-        public void DeleteActivities(Aktivity localaktivity)
-        {
-
-        }
-
-        public void UpdateActivity(Aktivity Localaktivty, int aktivityId)
-        {
-
         }
 
         public AlumnusModel AlumnusModel
         {
             get { return Context as AlumnusModel; }
         }
-
-
     }
 }

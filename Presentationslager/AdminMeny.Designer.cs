@@ -30,7 +30,7 @@
         {
             this.Btn_handleactivities = new System.Windows.Forms.Button();
             this.Btn_HandleAlumni = new System.Windows.Forms.Button();
-            this.btnLogOut = new System.Windows.Forms.Button();
+            this.BtnLogOut = new System.Windows.Forms.Button();
             this.Btn_sections = new System.Windows.Forms.Button();
             this.Btn_programs = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -55,20 +55,20 @@
             this.Btn_HandleAlumni.Text = "Handle alumni";
             this.Btn_HandleAlumni.UseVisualStyleBackColor = true;
             // 
-            // btnLogOut
+            // BtnLogOut
             // 
-            this.btnLogOut.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLogOut.Location = new System.Drawing.Point(703, 410);
-            this.btnLogOut.Name = "btnLogOut";
-            this.btnLogOut.Size = new System.Drawing.Size(85, 28);
-            this.btnLogOut.TabIndex = 15;
-            this.btnLogOut.Text = "Log out";
-            this.btnLogOut.UseVisualStyleBackColor = true;
-            this.btnLogOut.Click += new System.EventHandler(this.btnLogOut_Click);
+            this.BtnLogOut.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnLogOut.Location = new System.Drawing.Point(703, 410);
+            this.BtnLogOut.Name = "BtnLogOut";
+            this.BtnLogOut.Size = new System.Drawing.Size(85, 28);
+            this.BtnLogOut.TabIndex = 15;
+            this.BtnLogOut.Text = "Log out";
+            this.BtnLogOut.UseVisualStyleBackColor = true;
+            this.BtnLogOut.Click += new System.EventHandler(this.btnLogOut_Click);
             // 
             // Btn_sections
             // 
-            this.Btn_sections.Location = new System.Drawing.Point(120, 12);
+            this.Btn_sections.Location = new System.Drawing.Point(12, 12);
             this.Btn_sections.Name = "Btn_sections";
             this.Btn_sections.Size = new System.Drawing.Size(106, 37);
             this.Btn_sections.TabIndex = 16;
@@ -77,7 +77,7 @@
             // 
             // Btn_programs
             // 
-            this.Btn_programs.Location = new System.Drawing.Point(548, 12);
+            this.Btn_programs.Location = new System.Drawing.Point(124, 12);
             this.Btn_programs.Name = "Btn_programs";
             this.Btn_programs.Size = new System.Drawing.Size(106, 37);
             this.Btn_programs.TabIndex = 17;
@@ -91,7 +91,7 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.Btn_programs);
             this.Controls.Add(this.Btn_sections);
-            this.Controls.Add(this.btnLogOut);
+            this.Controls.Add(this.BtnLogOut);
             this.Controls.Add(this.Btn_HandleAlumni);
             this.Controls.Add(this.Btn_handleactivities);
             this.Name = "AdminMeny";
@@ -104,7 +104,7 @@
 
         private System.Windows.Forms.Button Btn_handleactivities;
         private System.Windows.Forms.Button Btn_HandleAlumni;
-        private System.Windows.Forms.Button btnLogOut;
+        private System.Windows.Forms.Button BtnLogOut;
         private System.Windows.Forms.Button Btn_sections;
         private System.Windows.Forms.Button Btn_programs;
     }
