@@ -3,7 +3,7 @@
 
 namespace Data_Layer.Repositories
 {
-    interface IUserRepository
+   public interface IUserRepository
     {
         AlumnusModel AlumnusModel { get; }
 

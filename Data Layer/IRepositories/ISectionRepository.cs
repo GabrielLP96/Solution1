@@ -2,7 +2,7 @@
 
 namespace Data_Layer.Repositories
 {
-    interface ISectionRepository
+   public interface ISectionRepository
     {
         AlumnusModel AlumnusModel { get; }
 

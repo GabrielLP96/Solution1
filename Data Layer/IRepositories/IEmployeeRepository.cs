@@ -1,6 +1,6 @@
 ﻿namespace Data_Layer.Repositories
 {
-    interface IEmployeeRepository
+   public interface IEmployeeRepository
     {
         AlumnusModel AlumnusModel { get; }
 

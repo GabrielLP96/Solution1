@@ -1,7 +1,14 @@
-﻿namespace Data_Layer.Repositories
+﻿using System.Collections.Generic;
+
+namespace Data_Layer.Repositories
 {
-    interface IAlumnusRepository
+    public interface IAlumnusRepository
     {
+        AlumnusModel AlumnusModel { get; }
+
         void CreateAlumn(Alumnus alumn);
+        List<Alumnus> GetAlumns();
+        Alumnus GetAlumnus(int userId);
+        bool IsAlumnus(User currentUser);
     }
 }
