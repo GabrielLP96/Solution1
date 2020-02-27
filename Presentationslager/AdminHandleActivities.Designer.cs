@@ -30,8 +30,8 @@
         {
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.Txtbox_activitieName = new System.Windows.Forms.TextBox();
+            this.TxtBox_description = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label2 = new System.Windows.Forms.Label();
             this.Btn_createNew = new System.Windows.Forms.Button();
@@ -40,6 +40,7 @@
             this.Btn_Delete = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.Activites = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -61,27 +62,27 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "Activitie name";
             // 
-            // textBox1
+            // Txtbox_activitieName
             // 
-            this.textBox1.Location = new System.Drawing.Point(86, 58);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(174, 20);
-            this.textBox1.TabIndex = 2;
+            this.Txtbox_activitieName.Location = new System.Drawing.Point(86, 58);
+            this.Txtbox_activitieName.Name = "Txtbox_activitieName";
+            this.Txtbox_activitieName.Size = new System.Drawing.Size(174, 20);
+            this.Txtbox_activitieName.TabIndex = 2;
             // 
-            // textBox2
+            // TxtBox_description
             // 
-            this.textBox2.Location = new System.Drawing.Point(86, 93);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(253, 118);
-            this.textBox2.TabIndex = 3;
+            this.TxtBox_description.Location = new System.Drawing.Point(86, 93);
+            this.TxtBox_description.Multiline = true;
+            this.TxtBox_description.Name = "TxtBox_description";
+            this.TxtBox_description.Size = new System.Drawing.Size(253, 118);
+            this.TxtBox_description.TabIndex = 3;
             // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.textBox2);
+            this.groupBox1.Controls.Add(this.TxtBox_description);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.Txtbox_activitieName);
             this.groupBox1.Location = new System.Drawing.Point(418, 28);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(370, 221);
@@ -154,11 +155,22 @@
             this.label4.TabIndex = 10;
             this.label4.Text = "Delete one selected activitie";
             // 
+            // Activites
+            // 
+            this.Activites.AutoSize = true;
+            this.Activites.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Activites.Location = new System.Drawing.Point(12, 9);
+            this.Activites.Name = "Activites";
+            this.Activites.Size = new System.Drawing.Size(71, 16);
+            this.Activites.TabIndex = 11;
+            this.Activites.Text = "Activities";
+            // 
             // AdminHandleActivities
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.Activites);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.Btn_Delete);
@@ -181,8 +193,8 @@
 
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox Txtbox_activitieName;
+        private System.Windows.Forms.TextBox TxtBox_description;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button Btn_createNew;
@@ -191,5 +203,6 @@
         private System.Windows.Forms.Button Btn_Delete;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label Activites;
     }
 }

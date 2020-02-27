@@ -47,6 +47,7 @@
             this.label9 = new System.Windows.Forms.Label();
             this.btn_register = new System.Windows.Forms.Button();
             this.Btn_previous = new System.Windows.Forms.Button();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // Pnr_txtbox
@@ -198,7 +199,7 @@
             // 
             // btn_register
             // 
-            this.btn_register.Location = new System.Drawing.Point(26, 374);
+            this.btn_register.Location = new System.Drawing.Point(15, 396);
             this.btn_register.Name = "btn_register";
             this.btn_register.Size = new System.Drawing.Size(93, 23);
             this.btn_register.TabIndex = 17;
@@ -215,11 +216,22 @@
             this.Btn_previous.UseVisualStyleBackColor = true;
             this.Btn_previous.Click += new System.EventHandler(this.Btn_previous_Click);
             // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(12, 373);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(121, 17);
+            this.checkBox1.TabIndex = 19;
+            this.checkBox1.Text = "Confirme information";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            // 
             // CreateAlumni
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(349, 548);
+            this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.Btn_previous);
             this.Controls.Add(this.btn_register);
             this.Controls.Add(this.label9);
@@ -269,5 +281,6 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Button btn_register;
         private System.Windows.Forms.Button Btn_previous;
+        private System.Windows.Forms.CheckBox checkBox1;
     }
 }

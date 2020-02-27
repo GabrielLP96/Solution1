@@ -46,6 +46,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.Signature_txtbox = new System.Windows.Forms.TextBox();
             this.signature = new System.Windows.Forms.Label();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // Btn_previous
@@ -60,7 +61,7 @@
             // 
             // btn_register
             // 
-            this.btn_register.Location = new System.Drawing.Point(26, 371);
+            this.btn_register.Location = new System.Drawing.Point(26, 394);
             this.btn_register.Name = "btn_register";
             this.btn_register.Size = new System.Drawing.Size(93, 23);
             this.btn_register.TabIndex = 36;
@@ -204,11 +205,22 @@
             this.signature.TabIndex = 39;
             this.signature.Text = "Signature";
             // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(12, 371);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(121, 17);
+            this.checkBox1.TabIndex = 40;
+            this.checkBox1.Text = "Confirme information";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            // 
             // CreateAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(320, 528);
+            this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.signature);
             this.Controls.Add(this.Signature_txtbox);
             this.Controls.Add(this.label2);
@@ -256,5 +268,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox Signature_txtbox;
         private System.Windows.Forms.Label signature;
+        private System.Windows.Forms.CheckBox checkBox1;
     }
 }

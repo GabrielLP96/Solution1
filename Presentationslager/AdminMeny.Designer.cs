@@ -31,6 +31,8 @@
             this.Btn_handleactivities = new System.Windows.Forms.Button();
             this.Btn_HandleAlumni = new System.Windows.Forms.Button();
             this.btnLogOut = new System.Windows.Forms.Button();
+            this.Btn_sections = new System.Windows.Forms.Button();
+            this.Btn_programs = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Btn_handleactivities
@@ -64,11 +66,31 @@
             this.btnLogOut.UseVisualStyleBackColor = true;
             this.btnLogOut.Click += new System.EventHandler(this.btnLogOut_Click);
             // 
+            // Btn_sections
+            // 
+            this.Btn_sections.Location = new System.Drawing.Point(120, 12);
+            this.Btn_sections.Name = "Btn_sections";
+            this.Btn_sections.Size = new System.Drawing.Size(106, 37);
+            this.Btn_sections.TabIndex = 16;
+            this.Btn_sections.Text = "Show Sections";
+            this.Btn_sections.UseVisualStyleBackColor = true;
+            // 
+            // Btn_programs
+            // 
+            this.Btn_programs.Location = new System.Drawing.Point(548, 12);
+            this.Btn_programs.Name = "Btn_programs";
+            this.Btn_programs.Size = new System.Drawing.Size(106, 37);
+            this.Btn_programs.TabIndex = 17;
+            this.Btn_programs.Text = "Show Programs";
+            this.Btn_programs.UseVisualStyleBackColor = true;
+            // 
             // AdminMeny
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.Btn_programs);
+            this.Controls.Add(this.Btn_sections);
             this.Controls.Add(this.btnLogOut);
             this.Controls.Add(this.Btn_HandleAlumni);
             this.Controls.Add(this.Btn_handleactivities);
@@ -83,5 +105,7 @@
         private System.Windows.Forms.Button Btn_handleactivities;
         private System.Windows.Forms.Button Btn_HandleAlumni;
         private System.Windows.Forms.Button btnLogOut;
+        private System.Windows.Forms.Button Btn_sections;
+        private System.Windows.Forms.Button Btn_programs;
     }
 }

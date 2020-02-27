@@ -10,21 +10,11 @@ using System.Windows.Forms;
 
 namespace Presentationslager
 {
-    public partial class AdminEditActivities : Form
+    public partial class AdminShowProgram : Form
     {
-        public AdminEditActivities()
+        public AdminShowProgram()
         {
             InitializeComponent();
-        }
-
-        private void Btn_Previous_Click(object sender, EventArgs e)
-        {
-            DialogResult = DialogResult.OK;
-        }
-
-        private void Btn_save_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
