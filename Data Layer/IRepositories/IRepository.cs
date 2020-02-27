@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Linq.Expressions;
 
-namespace Data_Layer.Repositories
+namespace Data_Layer.IRepositories
 {
     public interface IRepository <TEntity> where TEntity : class
     {

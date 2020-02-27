@@ -65,7 +65,10 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
-    <Compile Include="Repositories\IRepository.cs" />
+    <Compile Include="Repositories\AlumnusRepository.cs" />
+    <Compile Include="Repositories\EmployeeRepository.cs" />
+    <Compile Include="IRepositories\IRepository.cs" />
+    <Compile Include="IRepositories\IEmployeeRepository.cs" />
     <Compile Include="Repositories\Repository.cs" />
     <Compile Include="Section.cs" />
     <Compile Include="UnitOfWork\UnitOfWork.cs" />
