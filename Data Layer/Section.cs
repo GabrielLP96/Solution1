@@ -6,25 +6,20 @@ namespace Data_Layer
     using System.ComponentModel.DataAnnotations.Schema;
     using System.Data.Entity.Spatial;
 
-    [Table("Aktivity")]
-    public partial class Aktivity
+    [Table("Section")]
+    public partial class Section
     {
-        public int AktivityId { get; set; }
+        public int SectionId { get; set; }
 
         [StringLength(50)]
         public string Name { get; set; }
 
-        [StringLength(500)]
-        public string Description { get; set; }
-
-        public bool? Choose { get; set; }
-
-        public int? AlumId { get; set; }
-
         public int? EmployeeId { get; set; }
 
-        public virtual Alumnus Alumnus { get; set; }
+        public int? ProgramId { get; set; }
 
         public virtual Employee Employee { get; set; }
+
+        public virtual Program Program { get; set; }
     }
 }
