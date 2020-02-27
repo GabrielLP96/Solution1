@@ -18,7 +18,7 @@ namespace Data_Layer
 
         public int EmployeeId { get; set; }
 
-        public int? PersonId { get; set; }
+        public int? PersonId { get; set; } // Råkade bli fel namngivning när vi skapade tabellen i SQL, ska egentligen vara "userId"
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Aktivity> Aktivity { get; set; }

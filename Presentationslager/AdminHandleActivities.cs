@@ -25,7 +25,7 @@ namespace Presentationslager
 
         private void Btn_edit_Click(object sender, EventArgs e)
         {
-            AdminEditActivities adminEditActivities = new AdminEditActivities 
+           
         }
     }
 }
